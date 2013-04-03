@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.ollybolly"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  >
+        <activity android:name=".Ollybolly"
+                  android:label="@string/app_name" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<!-- OllybollyMain 액티비티 등록 -->
+		<activity 
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		   	android:name="OllybollyMain">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		   	
+		</activity>
+
+		<!-- OllybollyList 액티비티 등록 -->
+		<activity 
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		   	android:name="OllybollyList">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		   	
+		</activity>		
+		
+		<!-- Intro 액티비티 등록 -->
+		<activity 
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		   	android:name="OllybollyStoryPlay">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		   	
+		</activity>			
+		
+		<!-- OllybollyMyBox 액티비티 등록 -->
+		<activity 
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		   	android:name="OllybollyMyBox">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		   	
+		</activity>	
+		
+		<!-- OllybollySetting 액티비티 등록 -->
+		<activity 
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		   	android:name="OllybollySetting">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		   	
+		</activity>	
+				
+		<!-- MobileAlert 액티비티 등록 -->
+		<activity 
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+		   	android:name="MobileAlert">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>		   	
+		</activity>	
+						
+		<receiver android:name ="OllybollyWiFiMonitor">  
+   			<intent-filter>  
+       			<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />  
+   			</intent-filter>    
+		</receiver> 
+				
+    </application>
+    
+    
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />   
+</manifest>

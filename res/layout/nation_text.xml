@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/nation_text"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom"
+	android:visibility="gone"
+>
+
+	<ImageView
+		android:id="@+id/nation"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    />
+
+>
+</LinearLayout>
