@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ff0000"
+    android:padding="10px" >
+
+    <LinearLayout
+        android:id="@+id/story_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/xml_border"
+        android:minWidth="280dip"
+        android:orientation="vertical"
+        android:padding="10px" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_book" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/DialogText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_dotted_line"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dotted_line"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/writer"
+                style="@style/DialogText.Title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:text="글쓴이 | 라파엘리타 발레라" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/illustrator"
+                style="@style/DialogText.Title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:text="그린이 | 가디 마두에노" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <!-- 
+	            4. 동화내용보기화면 -팝업 내의 다이얼로그 박스 코너 라운드 처리 
+	                                   갤럭시 노트2에서 상단에만 적용되는 문제가 발생 (android API 버그로 추측됨..) 
+	      		       이전에도 이슈가 있었던 문제.. 개선된 후에 적용예정
+	            
+	               android:background="@drawable/inner_dialog_border"  
+            -->
+                
+            <ScrollView
+                android:id="@+id/sview"
+                android:fillViewport="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#85b329" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/message"
+                        style="@style/DialogText"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_weight="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_weight="1"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@drawable/icon_close"
+            android:gravity="right" />
+    </LinearLayout>
+
+</RelativeLayout>

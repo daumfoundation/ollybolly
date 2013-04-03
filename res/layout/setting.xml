@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1f1f1"
+    android:minWidth="280dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/settings_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+        	android:id="@+id/settings_title_under_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/st_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:background="@drawable/icon_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="35px"
+            android:layout_marginTop="5px"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/st_title_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_lang_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/title_language_select" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:padding="10px" >
+
+                    <ImageView
+                        android:id="@+id/st_korean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_setting_korean_on" />
+
+                    <ImageView
+                        android:id="@+id/st_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/icon_setting_english_off" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="20px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_ollybolly_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/logo_ollybolly_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_goto_ollybolly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/bt_goto_ollybolly" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="2px"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15px" >
+
+                <TextView
+                    android:id="@+id/st_ollybolly_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="그동안 쉽게 접하기 힘들었던 다양한 나라들의 그림동화를 재미있는 애니메이션으로 제공하는 올리볼리 그림동화!올리볼리 그림동화를 통해 나와 다름이 차별과 배제의 이유가 되는 것이 아니라 우리가 사는 세상을 더욱 풍부하고 창조적으로 만들고 있음을 느껴보세요!올리볼리 사이트(http://www.ollybolly.org) 및 다음 키즈짱(http://kids.daum.net)을 방문하시면 더 많은 올리볼리 동화를 만날 수 있답니다."
+                    android:color="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_daum_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/logo_daumfoundation_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_goto_daum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/bt_goto_daumfoundation" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="2px"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15px" >
+
+                <TextView
+                    android:id="@+id/st_daum_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="다음세대재단은 (주)다음커뮤니케이션 주주 및 임직원들이 스톡옵션 및 보너스, 현금 등을 자발적으로 기부하여 2001년 설립된 비영리법인입니다. 다음세대재단은 미디어, 커뮤니케이션의 현명한 사용을 통해 가치 있는 개인들이 창의적이고 다양한 모습으로 함께 살아갈 다음세대를 만들어 갑니다. 미디어와 청소년 사업인 &apos;유스보이스&apos;, 비영리 단체를 위한 IT 센터 &apos;Itcanus&apos;, 그리고 문화다양성 사업인 &apos;올리볼리&apos;를 통해 다음세대재단을 만나보세요!"
+                    android:color="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_daumkids_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_daum_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/st_goto_daumkids"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+                        android:layout_marginLeft="10px"
+                        android:background="@drawable/bt_goto_daum" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="2px"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15px" >
+
+                <TextView
+                    android:id="@+id/st_daumkids_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daum은 인터넷을 통해 새로운 가치를 창조하고, 세상의 즐거운 변화를 만들어가는 회사입니다. 24시간 365일, 사람과 사람, 사람과 세상을 연결하는 PC, 모바일, 디지털뷰, IPTV 등 다양한 디바이스를 통해 우리생활을 더욱 편리하고 즐겁게 만들어갑니다. No.1 네티즌 모금서비스 희망해(hope.daum.net)을 통해 희망을 나눠보세요! 다음 키즈짱(http://kids.daum.net)에서도 올리볼리 그림동화를 만날 수 있답니다."
+                    android:color="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

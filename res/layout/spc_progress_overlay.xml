@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="5px"
+    android:paddingLeft="5px"
+    android:paddingRight="5px"
+    android:paddingTop="5px" >
+
+    <ImageButton
+        android:id="@+id/Button_01"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/yoonsh1_bt1"
+        android:gravity="center|center_vertical" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/Button_02"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginLeft="10px"
+        android:background="@drawable/yoonsh1_bt2"
+        android:gravity="center|center_vertical" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/Button_03"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginLeft="10px"
+        android:background="@drawable/bt_view_description"
+        android:gravity="center|center_vertical" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/Button_04"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginLeft="10px"
+        android:background="@drawable/bt_save"
+        android:gravity="center|center_vertical" >
+    </ImageButton>
+
+</LinearLayout>
